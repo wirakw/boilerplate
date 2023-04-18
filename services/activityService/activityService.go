@@ -10,8 +10,7 @@ import (
 func GetAll() (*[]entities.Activity, error) {
 	var err error
 	var datas *[]entities.Activity
-	tx := database.Conn
-	tx.Order("id").Find(&datas)
+	tx := database.Conn.Find(&datas)
 	if tx.Error != nil {
 		err = tx.Error
 		utils.WarningLog.Println(err.Error())
@@ -46,13 +45,13 @@ func Create(body *entities.Activity) (*entities.Activity, error) {
 	return body, err
 }
 
-func Update(id int, body map[string]interface{}) (*entities.Activity, error) {
+func Update(id int, body *entities.Activity) (*entities.Activity, error) {
 	var err error
 	var resp *entities.Activity
 	if err := database.Conn.First(&resp, id).Error; err != nil {
 		return nil, err
 	}
-	resp.Title = body["title"].(string)
+	resp.Title = body.Title
 	tx := database.Conn.Save(&resp)
 	if tx.Error != nil {
 		err = tx.Error

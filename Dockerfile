@@ -5,9 +5,9 @@ WORKDIR /app
 COPY . .
 
 RUN go mod download
-RUN apk update && apk add bash && bash setup-env.sh docker
-RUN go build -o todo-app
+RUN apk update
+RUN go build -o run-app
 
-EXPOSE 3030
+EXPOSE 4080
 
-CMD [ "./todo-app" ]
+CMD [ "./run-app" ]

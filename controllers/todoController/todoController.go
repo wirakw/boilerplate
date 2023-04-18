@@ -3,7 +3,6 @@ package todoController
 import (
 	"boilerplate/entities"
 	"boilerplate/services/todoService"
-	"fmt"
 	"strconv"
 
 	"github.com/gofiber/fiber/v2"
@@ -14,8 +13,8 @@ func GetAll(ctx *fiber.Ctx) error {
 	activity_group_id := ctx.QueryInt("activity_group_id", 0)
 	Datas, err := todoService.GetAll(activity_group_id)
 	if err != nil {
-		return ctx.JSON(entities.Response{
-			Status:  "Failed",
+		return ctx.Status(404).JSON(entities.Response{
+			Status:  "Not Found",
 			Message: err.Error(),
 		})
 	}
@@ -33,9 +32,9 @@ func Get(ctx *fiber.Ctx) error {
 
 	site, err := todoService.Get(id)
 	if err != nil {
-		return ctx.JSON(entities.Response{
-			Status:  "Failed",
-			Message: err.Error(),
+		return ctx.Status(404).JSON(entities.Response{
+			Status:  "Not Found",
+			Message: "Todo with ID " + ctx.Params("id", "0") + " Not Found",
 		})
 	}
 
@@ -55,6 +54,18 @@ func Create(ctx *fiber.Ctx) error {
 			Message: err.Error(),
 		})
 	}
+	if Req.Title == "" {
+		return ctx.Status(400).JSON(entities.Response{
+			Status:  "Bad Request",
+			Message: "title cannot be null",
+		})
+	}
+	if Req.ActivityGroupId == 0 {
+		return ctx.Status(400).JSON(entities.Response{
+			Status:  "Bad Request",
+			Message: "activity_group_id cannot be null",
+		})
+	}
 	Datas, err := todoService.Create(Req)
 	if err != nil {
 		return ctx.JSON(entities.Response{
@@ -68,7 +79,7 @@ func Create(ctx *fiber.Ctx) error {
 		Message: "Success",
 		Data:    Datas,
 	}
-	return ctx.JSON(resp)
+	return ctx.Status(201).JSON(resp)
 }
 
 func Delete(ctx *fiber.Ctx) error {
@@ -77,12 +88,12 @@ func Delete(ctx *fiber.Ctx) error {
 	err := todoService.Delete(id)
 	if err != nil {
 		if err == gorm.ErrRecordNotFound {
-			message = "Activity with ID " + ctx.Params("id", "0") + " Not Found"
+			message = "Todo with ID " + ctx.Params("id", "0") + " Not Found"
 		} else {
 			message = err.Error()
 		}
-		return ctx.JSON(entities.Response{
-			Status:  "Failed",
+		return ctx.Status(404).JSON(entities.Response{
+			Status:  "Not Found",
 			Message: message,
 		})
 	}
@@ -98,22 +109,21 @@ func Delete(ctx *fiber.Ctx) error {
 
 func Update(ctx *fiber.Ctx) error {
 	id, _ := strconv.Atoi(ctx.Params("id", "0"))
-	var Req map[string]interface{}
-	if err := ctx.BodyParser(&Req); err != nil || len(Req) == 0 {
+	var Req *entities.Todo
+	if err := ctx.BodyParser(&Req); err != nil {
 		return ctx.JSON(entities.Response{
-			Status:  "Bad Request",
-			Message: "title cannot be null",
+			Status:  "Failed",
+			Message: err.Error(),
 		})
 	}
 
-	fmt.Println(Req)
 	Datas, err := todoService.Update(id, Req)
 	var message string
 	if err != nil {
 		if err == gorm.ErrRecordNotFound {
 			message = "Todo with ID " + ctx.Params("id", "0") + " Not Found"
 		}
-		return ctx.JSON(entities.Response{
+		return ctx.Status(404).JSON(entities.Response{
 			Status:  "Not Found",
 			Message: message,
 		})
