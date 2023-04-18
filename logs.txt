@@ -1,0 +1,60 @@
+[INFO]: 2023/04/18 14:20:54.387709 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[INFO]: 2023/04/18 14:21:27.247032 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[INFO]: 2023/04/18 14:22:15.006118 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[INFO]: 2023/04/18 14:23:38.437583 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[INFO]: 2023/04/18 14:25:18.110241 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[INFO]: 2023/04/18 14:25:55.360640 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[ERROR]: 2023/04/18 14:25:55.361860 D:/sgara/boilerplate/main.go:15: failed to listen: listen tcp4: address 3030: missing port in address
+[INFO]: 2023/04/18 14:26:16.969058 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[ERROR]: 2023/04/18 14:26:16.970703 D:/sgara/boilerplate/main.go:15: failed to listen: listen tcp4: address 8090: missing port in address
+[INFO]: 2023/04/18 14:26:34.183310 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[ERROR]: 2023/04/18 14:26:34.183310 D:/sgara/boilerplate/main.go:15: failed to listen: listen tcp4: address 8888: missing port in address
+[INFO]: 2023/04/18 14:26:53.745726 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[INFO]: 2023/04/18 14:28:37.151305 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[INFO]: 2023/04/18 14:30:12.907637 D:/sgara/boilerplate/main.go:11: starting the server on port 8080
+[ERROR]: 2023/04/18 14:30:12.908141 D:/sgara/boilerplate/main.go:13: failed to listen: listen tcp4: address 8080: missing port in address
+[INFO]: 2023/04/18 14:31:10.785981 D:/sgara/boilerplate/main.go:14: starting the server on port 
+[INFO]: 2023/04/18 14:31:55.742917 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[INFO]: 2023/04/18 14:32:17.018073 D:/sgara/boilerplate/main.go:13: starting the server on port 
+[INFO]: 2023/04/18 14:35:13.970107 D:/sgara/boilerplate/main.go:19: starting the server on port :4080
+[INFO]: 2023/04/18 14:35:26.838884 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 14:38:13.615343 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 14:47:37.957472 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 14:48:19.473113 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 14:49:52.241058 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 14:54:08.668756 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 14:54:51.339575 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:01:37.015438 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:02:27.766189 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:03:07.347201 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:10:12.925002 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:11:03.401808 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:11:24.836035 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:13:33.550087 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:17:29.891015 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:18:37.022211 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:20:04.711535 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:21:39.278847 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:31:29.158880 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:39:51.514173 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:41:47.437878 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:42:37.024695 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:46:47.016484 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:47:35.131572 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:55:13.087389 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 15:58:36.735162 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 16:00:07.223574 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 16:02:04.025036 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 16:02:29.717740 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 16:03:57.664390 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 16:05:43.834935 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 20:50:36.031833 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 20:51:10.504741 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[WARNING]: 2023/04/18 20:52:19.234887 D:/sgara/boilerplate/services/todoService/todoService.go:46: Error 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`boilerplate`.`todos`, CONSTRAINT `fk_activities_todo_activity` FOREIGN KEY (`activity_group_id`) REFERENCES `activities` (`id`))
+[INFO]: 2023/04/18 20:54:18.504337 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 20:59:16.180885 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 21:00:23.835492 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 21:01:31.540450 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 21:05:45.657425 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 21:06:15.161204 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
+[INFO]: 2023/04/18 21:09:34.999196 D:/sgara/boilerplate/main.go:19: starting the server on port :3030
