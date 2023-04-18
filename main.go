@@ -17,7 +17,7 @@ func main() {
 		utils.InfoLog.Println("Error loading .env file")
 	}
 	utils.InfoLog.Println("starting the server on port", os.Getenv("API_PORT"))
-	if err := app.Listen(os.Getenv("API_PORT")); err != nil {
+	if err := app.Listen(":3030"); err != nil {
 		utils.ErrorLog.Panic(err.Error())
 	}
 }

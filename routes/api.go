@@ -8,6 +8,11 @@ import (
 )
 
 func SetupRoutes(api fiber.Router) {
+	api.Get("/", func(c *fiber.Ctx) error {
+		return c.JSON(fiber.Map{
+			"msg": "devcode updated",
+		})
+	})
 	activity := api.Group("/activity-groups")
 	activity.Get("/", activityController.GetAll)
 	activity.Get("/:id", activityController.Get)
